@@ -1,9 +1,11 @@
 name: release
 
 on:
+  pull_request: {}
   push:
-    tags:
-      - '**'
+    branches:
+      - '*dokku*'
+
 
 env:
   GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx6g -Dorg.gradle.daemon=false -Dkotlin.incremental=false"
