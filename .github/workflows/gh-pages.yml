@@ -22,7 +22,6 @@ jobs:
           java-version: 19
 
       - name: Build and publish artifacts
-        env:
         run: ./gradlew dokkaHtmlMultiModule --parallel
 
       - name: Deploy docs to website
