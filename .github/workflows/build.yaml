@@ -24,4 +24,4 @@ jobs:
         with:
           xcode-version: '13.4.1'
 
-      - run: ./gradlew assemble jvmTest
+      - run: ./gradlew assemble jvmTest dokkaHtml
